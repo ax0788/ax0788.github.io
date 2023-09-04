@@ -1,0 +1,55 @@
+
+/* !ABOUT ME STYLES */
+
+.section__description {
+  margin-bottom: 2rem;
+  padding: 0 0.5rem 0 0.5rem;
+  &--p {
+    line-height: 1.8;
+    font-weight: 400;
+    font-size: clamp(1.7rem, 10vh, 2.1rem);
+    margin-bottom: 2rem;
+  }
+}
+
+
+.about__content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  flex-wrap: wrap;
+
+  &--info{
+ margin-top: 3rem;
+    & h1{
+      padding-bottom: 1rem;
+    }
+
+  }
+
+  & .box__container{
+
+    padding:1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+
+    & .box{
+       & h3{
+        font-size: 1.7rem;
+        color:var(--dark-clr);
+        padding:.6rem 0;
+        font-weight: normal;
+
+        
+        span{
+          color:var(--dark-clr);
+          font-weight: 600;
+        }
+       }
+
+    }
+  }
+}

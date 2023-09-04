@@ -1,0 +1,51 @@
+
+/* !HERO STYLES*/
+.home {
+  margin-top: 5.5rem;
+  padding-top: 5rem;
+
+  &__social{
+
+      justify-content: center;
+      display: flex;
+      column-gap: 1.25rem;
+    
+    &-link{
+    font-size: 2.6rem;
+    color: var(--text-color-light);
+    transition: color .3s;
+
+    &:hover{
+      color: var(--primary-clr);
+    }
+    }
+    
+  }
+}
+.section__title {
+  &--home {
+    font-family: var(--body-font);
+    font-weight: 600;
+    font-size: clamp(2rem, 10vw, 3rem);
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    color: var(--secondary-clr);
+
+  }
+
+  &--color {
+    color: var(--primary-clr);
+  }
+}
+
+.cv {
+  text-align: center;
+  margin-top: 5rem;
+
+  & .home__button {
+    padding: 1.75rem 2rem;
+    font-size: 1.7rem;
+  }
+}

@@ -1,0 +1,139 @@
+
+/*! === HEADER === */
+
+.header {
+  position: relative;
+  z-index: 999;
+  width: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  background-color: var(--dark-clr);
+  transition: padding 0.25s;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+
+  &__container {
+    margin-inline: auto;
+    padding-inline: 3.8rem;
+  }
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--header-height);
+  padding: 2.5rem;
+
+  &__logo {
+    margin-right: 2.5rem;
+
+    & a {
+      color: var(--light-clr);
+      padding: 0.5rem;
+      font-size: 2.5rem;
+      font-weight: 600;
+      border-bottom: none;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.navbar__menu {
+  position: absolute;
+  top: calc(var(--header-height) + 4rem);
+  left: 0;
+  width: 20rem;
+  height: 100vh;
+  transform: translateX(-26rem);
+  background-color: var(--dark-clr);
+  z-index: 999;
+  transition: transform 0.5s ease-in;
+
+  &.active {
+    transform: translateX(0);
+  }
+}
+
+.navbar__list {
+  display: flex;
+  flex-direction: column;
+
+  &--item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+
+  &--link {
+    display: block;
+    color: var(--light-clr);
+    font-weight: 600;
+    padding: 1rem;
+    transition: opacity 0.25s;
+
+    &:is(:hover, :focus) {
+      border: 0.2rem solid var(--primary-clr);
+    }
+  }
+}
+
+.navbar__btn-group {
+  display: flex;
+  column-gap: 1.5rem;
+}
+.active-link {
+  background-color: var(--primary-clr);
+}
+
+.menu-btn {
+  position: absolute;
+  padding: 1rem;
+  z-index: 1;
+  right: 1rem;
+  top: 3.5rem;
+  height: 20px;
+  width: 28px;
+  cursor: pointer;
+
+  &__burger {
+    position: absolute;
+    right: 0;
+    top: 0.5rem;
+    width: 28px;
+    height: 3px;
+    background: var(--light-clr);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -8px;
+      width: 28px;
+      height: 3px;
+      background: var(--light-clr);
+    }
+    // top:8px; = 8px down
+    &::after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      width: 20px;
+      height: 3px;
+      background: var(--light-clr);
+    }
+  }
+}
+
+.close {
+  transform: rotate(360deg);
+  background: transparent;
+
+  &::before {
+    transform: rotate(45deg) translate(5px, 8px);
+  }
+  &::after {
+    width: 28px;
+    transform: rotate(-45deg) translate(3px, -7px);
+  }
+}

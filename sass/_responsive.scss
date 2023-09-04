@@ -1,0 +1,222 @@
+
+/*! === MEDIA QUERIES === */
+
+@media screen and (min-width:320px){
+  .contact__container{
+    justify-content: center;
+  }
+
+  .projects__buttons{
+    justify-content: center;
+  }
+
+}
+/* --- L Mobile --- */
+@media (min-width: 31.25em) {
+  /* Em is used here as it is relative to font size. 31.25em = 500px*/
+  .header__container {
+    max-width: 50rem;
+  }
+
+.about__content{
+  .box__container{
+    flex-direction: column;
+  }
+
+  .section__description{
+    padding: 0 2.5rem;
+  }
+
+  .projects__container{
+    grid-template-columns: 350px;
+    justify-content: center;
+  }
+}
+
+.contact__container{
+  grid-template-columns: 360px;
+  justify-content: center;
+}
+
+}
+
+/* --- Tablets --- */
+@media (min-width: 48em) {
+  /* 768px */
+
+  :root {
+    --section-vertical-spacing: 6rem;
+  }
+
+  .section__container {
+    max-width: 96rem;
+  }
+
+  // Header & Nav
+  .header {
+    padding-top: 1.5rem;
+
+    &__container {
+      max-width: 70.8rem;
+    }
+
+    & .navbar__btn-group {
+      display: none;
+    }
+  }
+  #menu-toggler {
+    display: none;
+  }
+
+  .navbar__menu {
+    position: initial;
+    width: initial;
+    height: initial;
+    background-color: transparent;
+    transform: initial;
+    transition: none;
+  }
+
+  .navbar__list {
+    flex-direction: row;
+    gap: 1rem;
+
+    &--item {
+      border-bottom: none;
+    }
+
+    &--link {
+      font-size: 1.25rem;
+      padding: .75rem;
+    }
+  }
+
+  // About-Me
+
+
+  .section__description {
+    text-align: center;
+    padding: 0 2rem;
+  }
+
+  .description {
+    font-size: 2.4rem;
+  }
+
+  // Projects
+
+  .projects__container{
+    grid-template-columns: repeat(2, 350px);
+  }
+
+
+
+// Footer
+  .footer-container {
+    padding-bottom: 5rem;
+  }
+}
+
+/* --- Laptops/Desktops --- */
+@media (min-width: 64em) {
+  /* 1024px */
+
+  .header__container {
+    max-width: 100rem;
+  }
+  .navbar__list--link {
+    font-size: 1.3rem;
+  }
+  .projects__container{
+    grid-template-columns: repeat(3, 300px);
+    padding-block: 3rem 1rem;
+    justify-content: center;
+  }
+
+  .projects__card{
+    padding: 1.25rem 1.25rem 2.5rem;
+  }
+
+  .projects__image{
+    margin-bottom: 1rem;
+  }
+  .projects__content{
+    margin-bottom: 2rem;
+  }
+
+  .projects__button{
+    right: 1.25rem;
+  }
+
+    // Contact
+ .contact__container{
+  grid-template-columns: 680px;
+  padding-block: 2.5rem 2rem;
+}
+
+.contact__form{
+  row-gap: 1.5rem;
+}
+
+.contact__group{
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.5rem;
+}
+
+.contact-input{
+  padding: 1.5rem;
+}
+
+.contact__form textarea{
+  height: 20rem;
+}
+
+
+
+  
+}
+
+/* --- Large Desktop --- */
+@media (min-width: 75em) {
+  /* 1200px */
+
+  .header__container {
+    max-width: 130rem;
+  }
+  .navbar__list--link {
+    font-size: 1.5rem;
+    margin: 0 .1rem;
+    padding: 1rem 1.2rem;
+  }
+
+  .projects{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .projects__container{
+    grid-template-columns: repeat(4,32rem);
+  }
+  
+}
+ 
+@media (min-width: 92.5em) {
+  .projects{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .projects__container{
+    grid-template-columns: repeat(4,370px);
+    justify-content: center;
+    text-align: center;
+  }
+
+  .projects__card{
+    align-items: center;
+    justify-items: center;
+
+  }
+}

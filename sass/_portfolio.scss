@@ -1,0 +1,80 @@
+/*=============== PROJECTS ===============*/
+.projects__container {
+  overflow: initial;
+}
+
+/*=============== PROJECTS ===============*/
+
+.projects__container{
+  row-gap: 2.5rem;
+}
+.projects img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.projects__card{
+  padding: 1rem 1rem 2rem;
+  /* background-color: var(--white-color); */
+  
+  transition: background-color .4s;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.projects__image{
+  position: relative;
+  margin-bottom: .75rem;
+}
+
+
+
+.projects__content{
+  margin-bottom: 1.25rem;
+}
+
+
+
+.projects__title{
+  font-size: 2rem;
+  margin-bottom: .75rem;
+}
+
+.projects__buttons{
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+.projects__link{
+  display: flex;
+  align-items: center;
+  column-gap: .25rem;
+  color:  var(--dark-clr);
+  font-size: 2rem;
+  font-weight: 500;
+  transition: color .4s;
+}
+
+.projects__link i{
+  font-size: 2rem;
+  color: var(--dark-clr);
+  transition: color .4s;
+}
+.projects__link:hover, .projects__link:hover i{
+  color: var(--light-clr);
+}
+
+.projects__card:hover{
+  background-color: var(--dark-clr);
+  color: var(--light-clr);
+}
+
+.projects__link:hover, 
+.projects__link:hover i{
+  color: var(--light-clr);
+}
+
+.projects article{
+  margin: 1.5rem;
+}
